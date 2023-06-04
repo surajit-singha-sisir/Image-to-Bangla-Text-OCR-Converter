@@ -1,7 +1,5 @@
 # Image to Bangla Text (OCR) Text Converter
 
-![Project Logo](project-logo.png)
-
 Image to Bangla Text (OCR) Text Converter is a Django-based web application that allows users to convert image files to text documents. It supports both the Bangla and English languages using the pytesseract library and provides an easy-to-use interface for seamless conversion.
 
 ## Features
