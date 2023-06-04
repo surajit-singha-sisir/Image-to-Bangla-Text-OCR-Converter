@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image to Bengali Text Converter</title>
+    <link rel="stylesheet" href="{% static 'stylesheet.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+  <h1>IMAGE TO BANGLA TEXT (OCR) TEXT CONVERTER</h1>
+    <div class="upload-container">
+        <form id="upload-form" method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="file-upload">
+            <label for="file-input" class="file-input-label">
+              <span class="file-icon"><i class="fas fa-cloud-upload-alt"></i></span>
+              <span class="file-text">Choose File</span>
+              <input type="file" id="file-input" name="image" accept="image/*" required>
+            </label>
+          </div>
+          <div class="file-name"></div>
+          <div class="button-container">
+            <button type="submit" class="submit-button">Submit</button>
+          </div>
+        </form>
+      </div>
+      <p id="right-bottom"> &copy; Surajit Singha Sisir</p>
+              
+</body>
+<script src="{% static 'script.js' %}"></script>
+
+</html>
